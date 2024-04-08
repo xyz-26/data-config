@@ -1,3 +1,8 @@
+/**
+ * @fileoverview no-ppe-tcc-link
+ * @author zhanghengxiang2014
+ */
+"use strict";
 const rule = require('../../../lib/rules/no-ppe-tcc-link'),
     RuleTester = require('eslint').RuleTester;
 const ruleTester = new RuleTester();

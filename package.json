@@ -1,13 +1,17 @@
 {
   "name": "eslint-plugin-data-config",
-  "version": "0.0.0",
+  "version": "0.0.0-feat-init.1",
   "description": "data-config",
   "keywords": [
     "eslint",
     "eslintplugin",
     "eslint-plugin"
   ],
-  "author": "eslint-config-data-config",
+  "author": "zhanghengxiang2014@outlook.com",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:xyz-26/data-config.git"
+  },
   "main": "./lib/index.js",
   "exports": "./lib/index.js",
   "scripts": {
