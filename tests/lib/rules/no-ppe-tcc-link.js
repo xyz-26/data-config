@@ -1,6 +1,5 @@
 /**
  * @fileoverview no-ppe-tcc-link
- * @author zhanghengxiang2014
  */
 "use strict";
 const rule = require('../../../lib/rules/no-ppe-tcc-link'),
@@ -20,9 +19,9 @@ ruleTester.run('no-ppe-tcc-link', rule, {
             output: "var a = 'https://tosv.example.org/obj/tcc-config-web/tcc-v2-example-default'"
         },
         {
-            code: `var url = 'https://tosv.byted.org/obj/tcc-config-web/tcc-v2-data-ecom.smartop.data-default-ppe_123';`,
-            errors: [{ message: '不允许使用ppe环境下的tcc: https://tosv.byted.org/obj/tcc-config-web/tcc-v2-data-ecom.smartop.data-default-ppe_123.' }],
-            output: "var url = 'https://tosv.byted.org/obj/tcc-config-web/tcc-v2-data-ecom.smartop.data-default';"
+            code: `var url = 'https://tosv.example.org/obj/tcc-config-web/tcc-v2-data-ecom.smartop.data-default-ppe_123';`,
+            errors: [{ message: '不允许使用ppe环境下的tcc: https://tosv.example.org/obj/tcc-config-web/tcc-v2-data-ecom.smartop.data-default-ppe_123.' }],
+            output: "var url = 'https://tosv.example.org/obj/tcc-config-web/tcc-v2-data-ecom.smartop.data-default';"
         },
     ],
 });
